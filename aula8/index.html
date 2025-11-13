@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Seleção de Herói</title>
+    <link rel="shortcut icon" href="./public/images/images.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    
+    
+
+
+    <div class="topo">
+        <div class="logo">
+            <img src="./public/images/capacete (1) (1).png" alt="Logo RPG">
+            <h1 class="logo-text">As Guerras de Aethren</h1>
+        </div>
+    </div>
+   
+    
+    <header id="main-header">
+        <h1>Escolha seu Herói</h1>
+    </header>
+
+   
+    <main class="character-selection">
+      
+        <div class="card card-warrior" onclick="abrirHistoria('guerreiro')">
+            <img class="character-image" src="./public/images/guerreiro.jpg" alt="Um imponente guerreiro com sua armadura e espada">
+            <h2 class="character-title">Guerreiro ⚔️</h2>
+        </div>
+
+       
+        <div class="card card-mage" onclick="abrirHistoria('mago')">
+            <img class="character-image" src="./public/images/mago.jpg" alt="Uma maga concentrando uma bola de fogo em suas mãos">
+            <h2 class="character-title">Mago 🧙</h2>
+        </div>
+
+       
+        <div class="card card-archer" onclick="abrirHistoria('arqueiro')">
+            <img class="character-image" src="./public/images/arqueiro.jpg" alt="Um arqueiro com seu arco preparado">
+            <h2 class="character-title">Arqueiro 🏹</h2>
+        </div>
+
+    </main>
+
+    <div id="guerreiro" class="modal">
+        <div class="modal-content">
+            <h2>Guerreiro ⚔️</h2>
+            <p>
+                Nascido nas montanhas de Aethren, o Guerreiro foi forjado pelo fogo da batalha.
+                Seu juramento é proteger os inocentes e derrubar a tirania dos reis corrompidos.
+                Dizem que sua espada já cortou o véu entre a vida e a morte.
+            </p>
+            <button class="close-btn" onclick="fecharHistoria('guerreiro')">Fechar</button>
+        </div>
+    </div>
+
+ 
+    <div id="mago" class="modal">
+        <div class="modal-content">
+            <h2>Mago 🧙</h2>
+            <p>
+                Mestre das artes arcanas, o Mago estudou nas torres cristalinas de Eldoria.
+                Seu poder vem do equilíbrio entre luz e trevas — mas cada feitiço o consome lentamente.
+                Sua busca é por conhecimento proibido, capaz de alterar o destino dos reinos.
+            </p>
+            <button class="close-btn" onclick="fecharHistoria('mago')">Fechar</button>
+        </div>
+    </div>
+
+   
+    <div id="arqueiro" class="modal">
+        <div class="modal-content">
+            <h2>Arqueiro 🏹</h2>
+            <p>
+                O Arqueiro é filho das florestas de Mirath, onde o vento sussurra segredos antigos.
+                Sua precisão é lendária, capaz de atingir o coração de um inimigo antes que o som da flecha ecoe.
+                Silencioso, leal e mortal, ele luta pela liberdade do povo oprimido.
+            </p>
+            <button class="close-btn" onclick="fecharHistoria('arqueiro')">Fechar</button>
+        </div>
+    </div>
+
+    <div class="baixo">
+        <div class="conteudoBaixo">
+        <h1>  © As Guerras de Aethren são um produto licenciado.  
+            Qualquer uso indevido ou não autorizado poderá acarretar consequências legais</h1>
+    </div>
+    </div>
+
+   <script src="./js/script.js"></script>
+
+    
+</body>
+</html>
