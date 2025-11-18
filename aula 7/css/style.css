@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    display: grid;
+    min-height: 100vh;
+    gap: 10px;
+    font-family: sans-serif;
+
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 3fr 1fr;
+    background-color: #f0eaae;
+}
+
+header { grid-area: header; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+
+header, main, section, aside, footer {
+    background-color: #ebeae1; /* cor de pergaminho */
+    border: 2px solid #0e0b08; /* cor de tinta antiga */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header{
+    background-color: rgb(7, 7, 7);
+    height: 60px
+    
+}
+section{
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #c49133;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+    
+}
+
+aside{
+    margin-top: 20px;
+}
+
+
+
+#livro{
+
+    height: 800px;
+    width: 800px;
+    margin-top: 70px;
+    margin-left: 400px;
+
+    cursor: pointer;
+    
+   
+
+}
+
+
+
+footer{
+    background-color: #7c0606;
+}
